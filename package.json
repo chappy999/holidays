@@ -1,0 +1,44 @@
+{
+  "name": "japan-for-two",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test --test-isolation=none tests/state.test.mjs tests/data.test.mjs",
+    "test:browser": "node scripts/browser-smoke.cjs",
+    "test:server": "node --test --test-isolation=none tests/server-auth.test.mjs",
+    "start": "node server.mjs",
+    "test:a11y": "node scripts/accessibility.cjs",
+    "test:production": "node scripts/production-smoke.cjs",
+    "local": "node scripts/start-local.mjs",
+    "package:local": "npm run build && python3 scripts/package-local.py"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "@fontsource/dm-sans": "5.3.0",
+    "d3-geo": "3.1.1",
+    "lucide-react": "1.49.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@types/d3-geo": "3.1.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/topojson-client": "3.1.5",
+    "@vitejs/plugin-react": "6.1.1",
+    "playwright": "1.63.0",
+    "prettier": "3.9.9",
+    "topojson-client": "3.1.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "world-atlas": "2.0.2"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

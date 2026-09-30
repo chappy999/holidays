@@ -1,0 +1,74 @@
+export type Category = 'food' | 'culture' | 'nature' | 'art' | 'neighbourhood' | 'onsen';
+export type Experience = {
+  id: string;
+  title: string;
+  region: string;
+  category: Category;
+  tier: 'classic' | 'quiet' | 'detour';
+  lat: number;
+  lng: number;
+  duration: string;
+  description: string;
+  whyGo: string;
+  tradeoff: string;
+  novemberNote: string;
+  bookingNote: string;
+  walking: 'easy' | 'moderate' | 'active';
+  cost: string;
+  sourceUrl: string;
+  sourceLabel: string;
+  verification: 'pending' | 'verified';
+  tags: string[];
+};
+export type RouteStop = {
+  name: string;
+  lat: number;
+  lng: number;
+  nights: number;
+  dates: string;
+  description: string;
+};
+export type TripRoute = {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  nights: number;
+  pace: string;
+  hotelChanges: number;
+  departure: 'Osaka' | 'Tokyo';
+  highlights: string[];
+  tradeoff: string;
+  color: string;
+  stops: RouteStop[];
+  days: { date: string; title: string; base: string; detail: string }[];
+  transfers: { from: string; to: string; duration: string; note: string }[];
+  fitTags: string[];
+};
+export type Traveller = {
+  name: string;
+  interests: string[];
+  beenBefore: string;
+  walking: string;
+  notes: string;
+};
+export type Profile = {
+  travellers: [Traveller, Traveller];
+  pace: string;
+  budget: string;
+  hotelMoves: string;
+  departure: string;
+  constraints: string;
+  splurge: string;
+  driving: string;
+  year: string;
+  flights: string;
+};
+export type Vote = 'love' | 'maybe' | 'pass';
+export type TripState = {
+  version: 1;
+  profile: Profile;
+  votes: Record<string, [Vote | null, Vote | null]>;
+  chosenRoute: string | null;
+  notes: Record<string, string>;
+};

@@ -1,0 +1,368 @@
+.japan-map {
+  --map-ink: #253f36;
+  --map-rust: #bb4c35;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-width: 0;
+  height: clamp(390px, 48vw, 600px);
+  overflow: hidden;
+  border: 1px solid #d5ded2;
+  border-radius: 8px;
+  background: #e6eeea;
+  color: var(--map-ink);
+}
+.japan-map--compact {
+  height: clamp(340px, 42vw, 475px);
+}
+.japan-map__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: pan-y;
+  outline-offset: -4px;
+}
+.japan-map--dragging .japan-map__canvas {
+  cursor: grabbing;
+}
+.japan-map__heading {
+  position: absolute;
+  left: 24px;
+  top: 23px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  pointer-events: none;
+}
+.japan-map__eyebrow {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.15em;
+  color: #3e6254;
+}
+.japan-map__hint {
+  font-size: 11px;
+  color: #678074;
+}
+.japan-map__controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid #d7dbce;
+  border-radius: 6px;
+  background: #fffdf4f0;
+  box-shadow: 0 3px 9px #3748370a;
+}
+.japan-map__controls button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: #425d4a;
+  cursor: pointer;
+}
+.japan-map__controls button:hover {
+  background: #e5ebe0;
+}
+.japan-map__controls > span {
+  height: 17px;
+  width: 1px;
+  background: #d8decf;
+  margin: 0 3px;
+}
+.japan-map__controls button:focus-visible,
+.japan-map__nearby button:focus-visible {
+  outline: 2px solid var(--map-rust);
+  outline-offset: 1px;
+}
+.japan-map__sea-label {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: calc(9px * var(--map-screen-unit, 1));
+  letter-spacing: 0.24em;
+  fill: #829f96;
+  pointer-events: none;
+}
+.japan-map__city-labels {
+  pointer-events: none;
+}
+.japan-map__city-labels text {
+  font-family: inherit;
+  font-size: calc(11px * var(--map-screen-unit, 1));
+  font-weight: 520;
+  fill: #435649;
+  paint-order: stroke;
+  stroke: #f4f1e6;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.japan-map__route-stop {
+  pointer-events: none;
+}
+.japan-map__route-number {
+  fill: #fff;
+  font-family: inherit;
+  font-size: calc(11px * var(--map-screen-unit, 1));
+  font-weight: 700;
+}
+.japan-map__route-label {
+  fill: #5c5245;
+  font-family: inherit;
+  font-size: calc(10px * var(--map-screen-unit, 1));
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #f4f1e6;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.japan-map__pin {
+  cursor: pointer;
+  outline: none;
+}
+.japan-map__pin-disc {
+  fill: #567864;
+  stroke: #fffcf3;
+  stroke-width: 2.5;
+  transition:
+    fill 0.15s,
+    r 0.15s;
+}
+.japan-map__pin:hover .japan-map__pin-disc {
+  filter: brightness(0.85);
+}
+.japan-map__pin--active .japan-map__pin-disc {
+  stroke-width: 3.5;
+}
+.japan-map__pin-halo {
+  fill: #bb4c3522;
+  stroke: #bb4c3540;
+  stroke-width: 1;
+}
+.japan-map__pin-count {
+  fill: #fffaf1;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.japan-map__pin:focus-visible .japan-map__pin-hitarea {
+  stroke: var(--map-rust);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+.japan-map__north text {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  fill: #738378;
+  font-weight: 650;
+}
+.japan-map__selection {
+  position: absolute;
+  bottom: 49px;
+  left: 22px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: min(310px, calc(100% - 44px));
+  padding: 15px 17px;
+  border: 1px solid #dedecf;
+  border-left: 3px solid var(--map-rust);
+  border-radius: 4px;
+  background: #fffdf6f5;
+  box-shadow: 0 6px 20px #2a442813;
+  backdrop-filter: blur(7px);
+}
+.japan-map__selection-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 7px;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 650;
+  color: #767969;
+}
+.japan-map__selection-heading > span:last-child {
+  color: var(--map-rust);
+  white-space: nowrap;
+}
+.japan-map__selection strong {
+  display: block;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.japan-map__selection p {
+  margin: 7px 0 0;
+  font-size: 10px;
+  color: #687260;
+}
+.japan-map__selection p > span {
+  margin: 0 6px;
+}
+.japan-map__open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px 0 0;
+  border: 0;
+  border-top: 1px solid #e5e5d9;
+  background: none;
+  color: var(--map-rust);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+.japan-map__open > span {
+  font-size: 17px;
+  line-height: 1;
+}
+.japan-map__open:hover {
+  color: #71301f;
+}
+.japan-map__open:focus-visible {
+  outline: 2px solid var(--map-rust);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.japan-map__nearby {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid #e5e5d9;
+  color: #687260;
+  font-size: 10px;
+}
+.japan-map__nearby > span {
+  flex: 1;
+}
+.japan-map__nearby button {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 1px solid #dfdfd2;
+  border-radius: 50%;
+  background: #f7f6ed;
+  color: #4c614b;
+  cursor: pointer;
+}
+.japan-map__nearby button:hover {
+  border-color: #75856a;
+}
+.japan-map__invitation {
+  position: absolute;
+  bottom: 56px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64796b;
+  pointer-events: none;
+}
+.japan-map__invitation span {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 14px;
+}
+.japan-map__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 17px;
+  background: #e5ece5b8;
+  color: #6f8175;
+  font-family: inherit;
+  font-size: 9px;
+}
+.japan-map__footer a {
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.japan-map__footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 640px) {
+  .japan-map {
+    height: 415px;
+  }
+  .japan-map--compact {
+    height: 350px;
+  }
+  .japan-map__heading {
+    left: 14px;
+    top: 17px;
+  }
+  .japan-map__eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .japan-map__hint {
+    display: none;
+  }
+  .japan-map__controls {
+    right: 11px;
+    top: 11px;
+  }
+  .japan-map__controls button {
+    width: 28px;
+    height: 31px;
+  }
+  .japan-map__selection {
+    bottom: 45px;
+    left: 13px;
+    width: min(270px, calc(100% - 26px));
+    padding: 12px 14px;
+  }
+  .japan-map__selection strong {
+    font-size: 17px;
+  }
+  .japan-map__footer {
+    padding: 10px 12px;
+    font-size: 8px;
+    gap: 8px;
+  }
+  .japan-map__invitation {
+    left: 15px;
+    bottom: 49px;
+  }
+  .japan-map__invitation span {
+    font-size: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .japan-map__pin-disc {
+    transition: none;
+  }
+}

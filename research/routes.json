@@ -1,0 +1,492 @@
+[
+  {
+    "id": "classics-and-room-to-breathe",
+    "title": "The classics, with a Tokyo return",
+    "subtitle": "Tokyo, hot springs and Kyoto — for a return flight from Tokyo",
+    "description": "The familiar icons with room for good meals, neighbourhood walks and a two-night Hakone pause. Four opening nights in Tokyo, two in Hakone, five in Kyoto and two back in Tokyo make sense if a Tokyo return flight wins on price or convenience. Otherwise, finishing in Osaka removes a substantial return journey. Exact transport and venue access remain to be verified for November 2026.",
+    "nights": 13,
+    "pace": "Balanced, with a two-night hot-spring pause",
+    "hotelChanges": 3,
+    "departure": "Tokyo",
+    "highlights": [
+      "Tokyo's old and new neighbourhoods",
+      "Two nights in Hakone",
+      "Kyoto beyond the headline temples",
+      "An optional Nara or Osaka day",
+      "A relaxed final day in Tokyo"
+    ],
+    "tradeoff": "Returning to Tokyo adds a long train journey and transport cost. Choose an Osaka departure to avoid that return, moving the final two nights to Osaka instead.",
+    "color": "#CF5C44",
+    "stops": [
+      {
+        "name": "Tokyo",
+        "lat": 35.6812,
+        "lng": 139.7671,
+        "nights": 4,
+        "dates": "2–6 Nov",
+        "description": "Arrive gently; explore one or two neighbourhoods a day, with room for food and unscheduled discoveries."
+      },
+      {
+        "name": "Hakone",
+        "lat": 35.2509,
+        "lng": 139.0472,
+        "nights": 2,
+        "dates": "6–8 Nov",
+        "description": "A ryokan pause with onsen, open-air art and weather-dependent mountain scenery. Confirm meal, bath and tattoo policies."
+      },
+      {
+        "name": "Kyoto",
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "nights": 5,
+        "dates": "8–13 Nov",
+        "description": "An eastern Kyoto day, a western Kyoto day, a quieter neighbourhood day and one optional excursion."
+      },
+      {
+        "name": "Tokyo",
+        "lat": 35.6812,
+        "lng": 139.7671,
+        "nights": 2,
+        "dates": "13–15 Nov",
+        "description": "Return before departure day for food, shopping and anything you missed at the start."
+      }
+    ],
+    "days": [
+      {
+        "date": "2026-11-02",
+        "title": "Land softly in Tokyo",
+        "base": "Tokyo",
+        "detail": "Midday arrival. Allow the afternoon for immigration, luggage and the airport transfer. Check in, take a short neighbourhood walk and choose an easy dinner; avoid a timed attraction."
+      },
+      {
+        "date": "2026-11-03",
+        "title": "Old Tokyo on Culture Day",
+        "base": "Tokyo",
+        "detail": "November 3 is Culture Day, a national holiday. Explore Asakusa early, then walk by the Sumida River or through Yanaka. Expect more domestic visitors and verify any museum's holiday hours."
+      },
+      {
+        "date": "2026-11-04",
+        "title": "Tokyo, your way",
+        "base": "Tokyo",
+        "detail": "Choose a garden-and-museum day around Ueno or Meiji Jingu and the side streets of Omotesando. Reserve the evening for a food interest identified in your profile."
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Leave a day for discovery",
+        "base": "Tokyo",
+        "detail": "Choose one smaller-area pairing, such as Kiyosumi-Shirakawa and Monzen-nakacho, or Kagurazaka and a garden. A timed digital-art visit can replace part of the day if it appeals."
+      },
+      {
+        "date": "2026-11-06",
+        "title": "Trade the city for a ryokan",
+        "base": "Hakone",
+        "detail": "Travel to Hakone in the morning or early afternoon. Keep sightseeing light and arrive at your accommodation before its stated dinner check-in deadline. Ask about private bathing if useful."
+      },
+      {
+        "date": "2026-11-07",
+        "title": "A full day in the mountains",
+        "base": "Hakone",
+        "detail": "Choose the Open-Air Museum and an unhurried onsen afternoon, or a weather-dependent lake and ropeway outing. Fuji views are a bonus rather than a promise; local transport and volcanic-area access can change."
+      },
+      {
+        "date": "2026-11-08",
+        "title": "West to Kyoto",
+        "base": "Kyoto",
+        "detail": "Travel via Odawara to Kyoto. Settle in and take an evening walk along the Kamo River. Keep the arrival day free of ambitious temple circuits."
+      },
+      {
+        "date": "2026-11-09",
+        "title": "The Kyoto you imagined",
+        "base": "Kyoto",
+        "detail": "Start early in Higashiyama for Kiyomizu-dera and surrounding lanes, then slow down in a smaller temple or café. Respect residential lanes and any photography restrictions in Gion."
+      },
+      {
+        "date": "2026-11-10",
+        "title": "A quieter western Kyoto",
+        "base": "Kyoto",
+        "detail": "Visit Arashiyama early if the bamboo grove matters to you, then continue toward the Saga-Toriimoto area and smaller temples. Use buses or taxis thoughtfully; sights are spread out."
+      },
+      {
+        "date": "2026-11-11",
+        "title": "One excursion, chosen together",
+        "base": "Kyoto",
+        "detail": "Choose Nara for temples and wooded paths, Osaka for food and city energy, or stay in Kyoto. These are alternatives, not a checklist to complete in one day."
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Your personal Kyoto day",
+        "base": "Kyoto",
+        "detail": "Choose craft, a tea experience in Uji, gardens or a walk on the Fushimi Inari trails. Allow a long lunch and leave room for whatever has caught your attention."
+      },
+      {
+        "date": "2026-11-13",
+        "title": "Back to Tokyo",
+        "base": "Tokyo",
+        "detail": "Take the shinkansen to Tokyo and check into your final hotel. An afternoon return leaves the evening for a favourite food neighbourhood or a booked dinner."
+      },
+      {
+        "date": "2026-11-14",
+        "title": "A day without a checklist",
+        "base": "Tokyo",
+        "detail": "Use this day for shopping, a missed museum, a favourite neighbourhood or a special meal. Keep luggage and airport access in mind when choosing your hotel."
+      },
+      {
+        "date": "2026-11-15",
+        "title": "One last Tokyo morning",
+        "base": "Tokyo · departure",
+        "detail": "Enjoy a local breakfast and a compact final outing before the evening flight. Confirm whether you depart from Haneda or Narita and work backwards from airline check-in guidance."
+      }
+    ],
+    "transfers": [
+      {
+        "from": "Tokyo",
+        "to": "Hakone",
+        "duration": "About 2–3 hours to the accommodation",
+        "note": "Depends on your Tokyo base and where you stay in Hakone; routes via Odawara or Shinjuku require different local connections."
+      },
+      {
+        "from": "Hakone",
+        "to": "Kyoto",
+        "duration": "About 3.5–4.5 hours to the accommodation",
+        "note": "Local transport to Odawara, then a suitable shinkansen service. Not every fast service stops at Odawara; check the actual connection."
+      },
+      {
+        "from": "Kyoto",
+        "to": "Tokyo",
+        "duration": "About 3–4 hours to the accommodation",
+        "note": "The fastest direct trains take roughly 2 hours 15 minutes station to station; slower services and local transfers add time."
+      }
+    ],
+    "fitTags": ["first-visit", "classics", "onsen", "food", "balanced", "tokyo-departure"]
+  },
+  {
+    "id": "post-towns-and-forest-paths",
+    "title": "The road through old Japan",
+    "subtitle": "Tokyo, two nights in the Kiso Valley, Kyoto and Osaka",
+    "description": "Our strongest starting point for Charlie and Daniella: food, history and active days, with an overnight stay in a traditional post town and a full Nakasendo walking day. Four nights in Tokyo, two around Tsumago, five in Kyoto and two in Osaka keep packing to three accommodation changes. Matsumoto is omitted to give more time to the valley and Kyoto. The places are established, but staying overnight reveals quieter hours. Exact transport, accommodation and venue access remain to be verified.",
+    "nights": 13,
+    "pace": "Active days, four bases and three hotel changes",
+    "hotelChanges": 3,
+    "departure": "Osaka",
+    "highlights": [
+      "Tokyo food and neighbourhood culture",
+      "Two nights in the Kiso Valley",
+      "The Magome–Tsumago forest trail",
+      "Five nights for Kyoto and one optional excursion",
+      "An Osaka food finale"
+    ],
+    "tradeoff": "Tokyo to the Kiso Valley is a substantial transfer, with limited rural connections at the end. Inns can have fixed dinners and shared bathrooms; the walking day needs suitable weather. Two nights give the village and trail enough time to justify the detour.",
+    "color": "#697D61",
+    "stops": [
+      {
+        "name": "Tokyo",
+        "lat": 35.6812,
+        "lng": 139.7671,
+        "nights": 4,
+        "dates": "2–6 Nov",
+        "description": "Recover from the flight, eat widely and explore contrasting neighbourhoods. Keep a day for an immersive food or craft experience."
+      },
+      {
+        "name": "Tsumago · Kiso Valley",
+        "lat": 35.5763,
+        "lng": 137.5953,
+        "nights": 2,
+        "dates": "6–8 Nov",
+        "description": "Stay in or near the post town, subject to accommodation and transport checks. Use the full day for the Nakasendo walk."
+      },
+      {
+        "name": "Kyoto",
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "nights": 5,
+        "dates": "8–13 Nov",
+        "description": "Four full days for temples, smaller lanes, food and craft, with room for a Nara or Uji excursion."
+      },
+      {
+        "name": "Osaka",
+        "lat": 34.6937,
+        "lng": 135.5023,
+        "nights": 2,
+        "dates": "13–15 Nov",
+        "description": "Finish with food, lively neighbourhoods and a relaxed final morning once the departure airport is confirmed."
+      }
+    ],
+    "days": [
+      {
+        "date": "2026-11-02",
+        "title": "Arrive and find your feet",
+        "base": "Tokyo",
+        "detail": "Midday arrival. Transfer, check in and take a short local walk. Keep dinner close to your hotel and avoid a timed booking."
+      },
+      {
+        "date": "2026-11-03",
+        "title": "A Tokyo classic, at your pace",
+        "base": "Tokyo",
+        "detail": "Culture Day brings holiday demand. Visit Asakusa early if it is a priority, then choose riverside walking or Yanaka. Build the afternoon around street food and old neighbourhoods rather than crossing the whole city."
+      },
+      {
+        "date": "2026-11-04",
+        "title": "A second side of Tokyo",
+        "base": "Tokyo",
+        "detail": "Choose a shrine-and-design walk, a major museum or a contrasting food neighbourhood. Leave space for an evening experience chosen together, such as a small-group food walk or a booked counter meal."
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Make, taste and get involved",
+        "base": "Tokyo",
+        "detail": "Reserve one immersive experience that earns its place: cooking, craft or a food-focused neighbourhood visit. Keep the rest flexible. If forwarding luggage to Kyoto, confirm receipt and delivery dates with both hotels."
+      },
+      {
+        "date": "2026-11-06",
+        "title": "Sleep in the Kiso Valley",
+        "base": "Tsumago · Kiso Valley",
+        "detail": "Travel to Nagiso via a suitable rail route, then continue by a confirmed bus or prearranged taxi. Keep this as a transfer-and-settle day. Walk Tsumago after the day visitors thin and arrive in time for your inn’s dinner."
+      },
+      {
+        "date": "2026-11-07",
+        "title": "Walk the old Nakasendo",
+        "base": "Tsumago · Kiso Valley",
+        "detail": "In suitable weather, take local transport to Magome and walk the approximately 8 km route to Tsumago. Allow 3–4 hours including pauses, plus bus and lunch time. The uneven paths and climbs suit an active day; use a town-and-food alternative if conditions are poor."
+      },
+      {
+        "date": "2026-11-08",
+        "title": "From wooden villages to Kyoto",
+        "base": "Kyoto",
+        "detail": "Travel via Nagiso and Nagoya to Kyoto. Check in, stroll by the Kamo River and make dinner the main event. Rural connections may dictate your departure time."
+      },
+      {
+        "date": "2026-11-09",
+        "title": "Kyoto’s eastern hills",
+        "base": "Kyoto",
+        "detail": "Start early for Kiyomizu-dera or another headline temple, then link smaller temples and lanes on foot. Leave room for tea, browsing and a long lunch."
+      },
+      {
+        "date": "2026-11-10",
+        "title": "Arashiyama beyond the busiest streets",
+        "base": "Kyoto",
+        "detail": "See the bamboo grove early if it appeals, then walk toward the Saga-Toriimoto area and smaller temples. Concentrate on this side of Kyoto instead of adding distant sights."
+      },
+      {
+        "date": "2026-11-11",
+        "title": "Tea country or ancient Nara",
+        "base": "Kyoto",
+        "detail": "Choose Uji for tea, riverside walking and history, or Nara for major temples and wooded paths. These are alternative full-day directions, not a combined checklist."
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Your own Kyoto",
+        "base": "Kyoto",
+        "detail": "Choose a craft or cooking experience, the quieter Fushimi Inari trails or a garden-and-neighbourhood day. Use what you have enjoyed so far to decide; five Kyoto nights make this flexibility possible."
+      },
+      {
+        "date": "2026-11-13",
+        "title": "A short hop to Osaka",
+        "base": "Osaka",
+        "detail": "Transfer after breakfast, leave bags and explore one area before an evening devoted to food. Namba is an obvious starting point; choose specific stops from the shared shortlist."
+      },
+      {
+        "date": "2026-11-14",
+        "title": "The city or one final excursion",
+        "base": "Osaka",
+        "detail": "Stay in Osaka for markets, walking and neighbourhoods, or spend the full day in Himeji if the castle is a priority. Treat these as alternatives and leave time for a final dinner."
+      },
+      {
+        "date": "2026-11-15",
+        "title": "An Osaka morning, then home",
+        "base": "Osaka · departure",
+        "detail": "Keep the morning near your base. The airport and any domestic connection remain unconfirmed; set your transfer time after checking the booked flight and airline guidance."
+      }
+    ],
+    "transfers": [
+      {
+        "from": "Tokyo",
+        "to": "Tsumago · Kiso Valley",
+        "duration": "About 4–5.5 hours to the accommodation",
+        "note": "Compare routes via Nagoya or Shiojiri once the actual train schedules and accommodation are known. Nagiso is the nearest rail gateway; not all limited expresses stop there. Confirm the final bus or taxi before reserving rail."
+      },
+      {
+        "from": "Tsumago · Kiso Valley",
+        "to": "Kyoto",
+        "duration": "About 3–4.5 hours to the accommodation",
+        "note": "Connect to Nagiso station, continue to Nagoya, then take the shinkansen to Kyoto. Rural bus and train gaps may extend the trip."
+      },
+      {
+        "from": "Kyoto",
+        "to": "Osaka",
+        "duration": "About 1–1.5 hours between accommodations",
+        "note": "Several ordinary rail routes work well. Choose for the actual hotel locations; a shinkansen is not automatically the most convenient choice."
+      }
+    ],
+    "fitTags": [
+      "recommended",
+      "walking",
+      "countryside",
+      "traditional-towns",
+      "food",
+      "history",
+      "immersive",
+      "active",
+      "osaka-departure"
+    ]
+  },
+  {
+    "id": "art-islands-and-inland-sea",
+    "title": "Art, islands and the Inland Sea",
+    "subtitle": "Tokyo and Kyoto, then three nights on Naoshima and a finish in Osaka",
+    "description": "A provisional route for design, contemporary art and time by the water. Four nights in Tokyo and four in Kyoto keep the first-visit essentials, followed by three on Naoshima and two in Osaka. The island stay falls Tuesday–Friday to avoid a Monday arrival, when many art venues are commonly closed. Individual venue calendars, ferries and advance tickets still need checking for November 2026.",
+    "nights": 13,
+    "pace": "Considered, with two longer travel days",
+    "hotelChanges": 3,
+    "departure": "Osaka",
+    "highlights": [
+      "Tokyo architecture and neighbourhoods",
+      "Four nights in Kyoto",
+      "Naoshima's art and coastal scenery",
+      "An optional Teshima day",
+      "Two final nights in Osaka"
+    ],
+    "tradeoff": "The islands add rail, local-train and ferry connections, and fewer dinner options. Art tickets and weather matter; Naoshima is internationally established, not an unknown escape.",
+    "color": "#4E8E98",
+    "stops": [
+      {
+        "name": "Tokyo",
+        "lat": 35.6812,
+        "lng": 139.7671,
+        "nights": 4,
+        "dates": "2–6 Nov",
+        "description": "A gentle arrival followed by architecture, food and neighbourhoods, with one day for a major museum or digital-art venue if desired."
+      },
+      {
+        "name": "Kyoto",
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "nights": 4,
+        "dates": "6–10 Nov",
+        "description": "Classic temples, gardens and craft, paced across three full days."
+      },
+      {
+        "name": "Naoshima",
+        "lat": 34.4598,
+        "lng": 133.9957,
+        "nights": 3,
+        "dates": "10–13 Nov",
+        "description": "An island base for carefully chosen art visits and coastal downtime, with Teshima as an optional full-day excursion."
+      },
+      {
+        "name": "Osaka",
+        "lat": 34.6937,
+        "lng": 135.5023,
+        "nights": 2,
+        "dates": "13–15 Nov",
+        "description": "Return to the mainland well before departure day, then enjoy food, shopping and an easy airport transfer once confirmed."
+      }
+    ],
+    "days": [
+      {
+        "date": "2026-11-02",
+        "title": "A soft Tokyo landing",
+        "base": "Tokyo",
+        "detail": "Allow the afternoon for airport formalities and your transfer. Find a nearby dinner and save the ambitious sightseeing for later."
+      },
+      {
+        "date": "2026-11-03",
+        "title": "Old Tokyo on a national holiday",
+        "base": "Tokyo",
+        "detail": "Culture Day can mean busy sights and changed museum hours. Begin early in Asakusa or Yanaka, then spend the afternoon on a river walk or in a quieter neighbourhood."
+      },
+      {
+        "date": "2026-11-04",
+        "title": "A city of art and architecture",
+        "base": "Tokyo",
+        "detail": "Choose one major art or design stop, then explore the surrounding area. A digital-art attraction is optional and may need a timed ticket; do not build the day around several distant venues."
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Coffee, craft and side streets",
+        "base": "Tokyo",
+        "detail": "Choose Kiyosumi-Shirakawa, Kagurazaka or another compact neighbourhood pairing, guided by your profile. Leave space for a memorable dinner."
+      },
+      {
+        "date": "2026-11-06",
+        "title": "West to Kyoto",
+        "base": "Kyoto",
+        "detail": "Take the shinkansen to Kyoto and settle in. Explore the Kamo River area in the late afternoon rather than squeezing in a distant temple."
+      },
+      {
+        "date": "2026-11-07",
+        "title": "Kyoto's classics, early",
+        "base": "Kyoto",
+        "detail": "Visit an eastern Kyoto headline sight early, then explore smaller temples and streets. Weekend crowds make an early start and a flexible lunch especially useful."
+      },
+      {
+        "date": "2026-11-08",
+        "title": "Gardens and the western hills",
+        "base": "Kyoto",
+        "detail": "Choose Arashiyama and a quieter temple beyond its busiest streets, or a garden-and-craft day in the city. Prioritise atmosphere over a high sight count."
+      },
+      {
+        "date": "2026-11-09",
+        "title": "Tea, craft and a slower day",
+        "base": "Kyoto",
+        "detail": "Choose Uji, a reserved craft experience or Kyoto neighbourhoods. Check Monday opening before selecting a museum. Prepare a small island bag if forwarding larger luggage to Osaka."
+      },
+      {
+        "date": "2026-11-10",
+        "title": "To the Inland Sea",
+        "base": "Naoshima",
+        "detail": "Travel via Okayama and Uno, then take a confirmed ferry to Naoshima. Allow much of the day for connections and check-in. Choose a local walk rather than an essential timed museum on arrival."
+      },
+      {
+        "date": "2026-11-11",
+        "title": "A Naoshima art day",
+        "base": "Naoshima",
+        "detail": "Build the day around a reserved Chichu Art Museum slot if available, adding a small number of other sites and coast time. Plan buses, walking or a suitable rental cycle around your accommodation and venue access rules."
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Teshima, or more island time",
+        "base": "Naoshima",
+        "detail": "If venue openings, tickets, ferries and weather align, spend the day on Teshima with a confirmed return sailing. Otherwise stay on Naoshima for the Honmura area, art and a slower coastal day. Teshima Museum access must be confirmed before committing."
+      },
+      {
+        "date": "2026-11-13",
+        "title": "Back to the mainland",
+        "base": "Osaka",
+        "detail": "Ferry to Uno, rail via Okayama and on to Osaka. Keep the day flexible for island transport and enjoy an easy dinner once settled. The two-night mainland finish creates a buffer before the flight."
+      },
+      {
+        "date": "2026-11-14",
+        "title": "A last full day together",
+        "base": "Osaka",
+        "detail": "Explore Osaka's food and neighbourhoods, shop for things you actually want to take home or spend time at one chosen attraction. Leave room for a final dinner reservation."
+      },
+      {
+        "date": "2026-11-15",
+        "title": "A final Osaka morning",
+        "base": "Osaka · departure",
+        "detail": "Stay close to your base before the evening flight. Confirm the actual airport and any domestic connection before setting the transfer and check-in timetable."
+      }
+    ],
+    "transfers": [
+      {
+        "from": "Tokyo",
+        "to": "Kyoto",
+        "duration": "About 3–4 hours to the accommodation",
+        "note": "Direct shinkansen services vary by stopping pattern. Add time at both ends for your actual hotels."
+      },
+      {
+        "from": "Kyoto",
+        "to": "Naoshima",
+        "duration": "About 4–5.5 hours to the accommodation",
+        "note": "Shinkansen to Okayama, local train toward Uno, possibly changing at Chayamachi, then ferry and island transport. Connection gaps can extend the journey."
+      },
+      {
+        "from": "Naoshima",
+        "to": "Osaka",
+        "duration": "About 4–5.5 hours to the accommodation",
+        "note": "Allow for the ferry to Uno, local rail to Okayama, shinkansen to Shin-Osaka and onward city transport. Confirm ferry cancellations and avoid tight reservations."
+      }
+    ],
+    "fitTags": ["art", "design", "islands", "slow-travel", "food", "osaka-departure"]
+  }
+]
